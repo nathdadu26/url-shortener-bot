@@ -28,7 +28,7 @@ LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", "0"))  # e.g. -1001234567890
 # ---------------- DATABASE ----------------
 
 client = MongoClient(MONGO_URI)
-db = client["shortener_bot"]
+db = client["viralbox_db"]
 links_col = db["links"]
 user_api_col = db["user_apis"]
 
